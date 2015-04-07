@@ -16,12 +16,11 @@ int lenB = strlen(B);
 Matr *m = (Matr *) malloc ((lenA)*(lenB)*sizeof(Matr));
 
 int i;
-for(i = 1; i < lenA;i++)
+for(i = 1; i < lenB;i++)
 	m[i].len = 0;
 int j;
-for (j = 0; j < lenB;j++)
-	m[j*lenA].len = 0;
-
+for (j = 0; j < lenA;j++)
+	m[j*lenB].len = 0;
 for(i = 1; i < lenA;i++){
     for (j = 1; j < lenB;j++){
 		if (A[i] == B[j]){
